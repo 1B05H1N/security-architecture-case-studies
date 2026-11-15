@@ -1,4 +1,4 @@
-# Security architecture case studies
+# Security Architecture Case Studies
 
 Three synthetic designs showing how trust boundaries, authorization, release
 integrity, and operational controls affect an implementation. These are worked
@@ -14,7 +14,7 @@ Each case records the assets, attacker capabilities, abuse cases, decisions,
 tradeoffs, and verification work. The linked labs provide executable checks;
 this repository is the design record.
 
-## Using a case
+## Using a Case
 
 1. Read its assumptions before applying its controls.
 2. Follow the normal and failure paths through the diagram.
@@ -24,7 +24,7 @@ this repository is the design record.
 
 Start a new assessment with the [decision template](decision-template.md).
 
-## Related projects
+## Related Projects
 
 - [Kubernetes security lab](https://github.com/1B05H1N/kubernetes-security-lab):
   manifest review and admission control for workload isolation.
@@ -37,7 +37,10 @@ Start a new assessment with the [decision template](decision-template.md).
 - [NIST Secure Software Development Framework](https://csrc.nist.gov/projects/ssdf)
 - [SLSA specification](https://slsa.dev/spec/)
 
-
 ## License
 
-[CC BY-SA 4.0](LICENSE)
+This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**1B05H1N** - [GitHub Profile](https://github.com/1B05H1N)

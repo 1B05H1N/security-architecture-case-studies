@@ -1,6 +1,6 @@
-# Approval-bound incident automation
+# Approval-Bound Incident Automation
 
-## Scope and assumptions
+## Scope and Assumptions
 
 A detection can propose containment of a device. An analyst reviews the device,
 reason, scope, and expiry before an execution service invokes a platform API.
@@ -39,7 +39,7 @@ source and ticketing system do not.
 | Keep release/reversal separate from containment | Undo has different authority and business consequences | Reversal requires its own reviewed request |
 | Log identifiers and decisions, not full ticket content or credentials | Support reconstruction without unnecessary sensitive data | Detailed evidence needs separate retention and access controls |
 
-## State walkthrough
+## State Walkthrough
 
 | Event | Required transition |
 | --- | --- |
@@ -52,7 +52,7 @@ source and ticketing system do not.
 | Duplicate delivery arrives | Return the recorded operation state |
 | Analyst requests release | Create a distinct proposal |
 
-## Verification before deployment
+## Verification Before Deployment
 
 1. Change a device identifier after approval; execution must be rejected.
 2. Revoke the approver before execution; the approval must stop authorizing.

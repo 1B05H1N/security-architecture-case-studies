@@ -1,4 +1,4 @@
-# Security decision record
+# Security Decision Record
 
 ## Context
 
@@ -9,7 +9,7 @@ Describe the system, decision owner, assets, and implementation boundary.
 List dependencies the design cannot enforce. Identify how each assumption will
 be checked and what happens when it no longer holds.
 
-## Attacker capabilities
+## Attacker Capabilities
 
 State which inputs, identities, infrastructure, and timing the attacker controls.
 
@@ -17,7 +17,7 @@ State which inputs, identities, infrastructure, and timing the attacker controls
 
 Compare the choices, including operational cost and failure behavior.
 
-## Decision and invariants
+## Decision and Invariants
 
 State the selected approach and the conditions that must remain true.
 
@@ -26,6 +26,6 @@ State the selected approach and the conditions that must remain true.
 Map each invariant to a test, deployment check, or review. Separate completed
 checks from required work and identify who owns the remaining evidence.
 
-## Residual risk
+## Residual Risk
 
 Record what the decision does not prevent and when it must be revisited.

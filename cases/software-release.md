@@ -1,6 +1,6 @@
-# Software release integrity
+# Software Release Integrity
 
-## Scope and assumptions
+## Scope and Assumptions
 
 A small Python application is packaged by a GitHub-hosted runner. Consumers
 retrieve the archive, its SPDX inventory, and a signed build attestation.
@@ -10,7 +10,7 @@ The demonstration has no third-party Python packages. Its SPDX inventory covers
 the files distributed in the archive, not an operating system, interpreter, or
 transitive dependency graph.
 
-## Assets and boundaries
+## Assets and Boundaries
 
 Assets are the source revision, workflow, archive, inventory, and promotion
 decision. An attacker may replace downloaded files or submit an untrusted pull
@@ -40,7 +40,7 @@ flowchart LR
 | Verify signed builder identity, source ref, and source digest | A valid signature from an unexpected workflow is insufficient | The consumer must obtain expected values through a trusted release process |
 | Inspect archives without extraction | Reject traversal, links, duplicate entries, and unexpected files | This policy intentionally supports only the demo's small archive |
 
-## Failure paths
+## Failure Paths
 
 - A checksum distributed beside a replaced archive is also replaceable.
   Local hash checks do not establish publisher identity.

@@ -1,6 +1,6 @@
-# Multi-tenant document API
+# Multi-Tenant Document API
 
-## Scope and assumptions
+## Scope and Assumptions
 
 The service stores private documents for multiple tenants. A user belongs to
 one tenant and has a server-assigned role. Tenant administrators may manage
@@ -12,7 +12,7 @@ not implement production authentication, persistent storage, or an identity
 provider. A deployment needs TLS, validated sessions, token revocation, and a
 database transaction boundary.
 
-## Assets and boundaries
+## Assets and Boundaries
 
 Assets are document contents, tenant membership, roles, and deletion rights.
 An attacker can control request paths, headers, JSON, and document identifiers.
@@ -40,7 +40,7 @@ application. The HTTP adapter does not decide object access.
 | Bind create operations to the authenticated tenant and owner | Reject mass assignment of ownership fields | Delegated creation needs an explicit permission and endpoint |
 | Lock lookup and deletion together in the lab | Avoid a check/use race in shared memory | A production database must enforce the equivalent transaction invariant |
 
-## Abuse cases and checks
+## Abuse Cases and Checks
 
 | Abuse case | Expected result |
 | --- | --- |
@@ -55,7 +55,7 @@ application. The HTTP adapter does not decide object access.
 Run the [authorization lab's tests](https://github.com/1B05H1N/api-authorization-test-lab/blob/main/test_api.py)
 with `python3 -m unittest -v` in that repository.
 
-## Remaining deployment work
+## Remaining Deployment Work
 
 - Preserve the checks in database-backed list and mutation queries.
 - Re-evaluate authorization after membership or role revocation.
