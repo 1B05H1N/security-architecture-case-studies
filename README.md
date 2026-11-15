@@ -8,6 +8,7 @@ examples, not accounts of an employer's systems or evidence of production use.
 | --- | --- | --- |
 | [Multi-tenant API](cases/multi-tenant-api.md) | Enforce ownership and tenant boundaries in the service, not in the client | [API authorization lab](https://github.com/1B05H1N/api-authorization-test-lab) |
 | [Software release](cases/software-release.md) | Verify the artifact and the builder identity before promotion | [Supply-chain demo](https://github.com/1B05H1N/secure-supply-chain-demo) |
+| [AI assistant](cases/ai-assistant.md) | Treat retrieved content as untrusted and reauthorize every tool request | [AI application security lab](https://github.com/1B05H1N/ai-application-security-lab) |
 | [Incident automation](cases/incident-automation.md) | Separate detection from approval and execution | Design walkthrough; no live containment integration |
 
 Each case records the assets, attacker capabilities, abuse cases, decisions,
